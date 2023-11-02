@@ -9,17 +9,17 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Layer Definitions 
-#define default 0
-#define lower 1
-#define raise 2
-#define fourth 3
+#define DEFAULT 0
+#define LOWER 1
+#define RAISE 2
+#define THIRD 3
 
 
 / {
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                DEFAULT_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -30,11 +30,11 @@
    &kp ESC       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LCTRL TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                 &mt LCMD RET    &mo lower    &lt raise SPACE    &lt raise SPACE   &mo lower    &mt RCMD RET
+                 &mt LCMD RET    &mo LOWER    &lt RAISE SPACE    &lt RAISE SPACE   &mo LOWER    &mt RCMD RET
 
                         >;
                 };
-                lower_layer {
+                LOWER_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -45,12 +45,12 @@
    &trans    &kp EXCL    &kp AT      &kp HASH      &kp DLLR      &kp PRCNT        &kp CARET     &kp AMPS       &kp ASTRK       &kp LS(N9)       &kp LS(N0)       &trans
    &trans    &kp UNDER   &kp PLUS    &kp PIPE      &kp DQT       &kp LBKT         &kp LEFT      &kp DOWN       &kp UP          &kp RIGHT        &kp LS(GRAVE)    &trans
    &trans    &kp MINUS   &kp EQUAL   &kp BSLH      &kp SQT       &kp RBKT         &kp RBRC      &kp LBRC       &kp LT          &kp GT           &kp GRAVE        &trans
-                   &trans    &mo raise    &trans    &trans    &mo raise    &trans
+                   &trans    &mo RAISE    &trans    &trans    &mo RAISE    &trans
 
                         >;
                 };
 
-                raise_layer {
+                RAISE_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -61,12 +61,12 @@
    &trans    &kp N1       &kp N2        &kp N3       &kp N4         &kp N5          &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &trans 
    &trans    &kp LG(N1)   &kp LG(N2)    &kp LG(N3)   &kp LG(N4)     &kp LG(N5)      &trans    &kp PG_DN &kp PG_UP  &trans    &trans    &trans
    &trans    &kp CAPS     &kp LA(F12)   &kp C_MUTE   &kp C_VOL_UP   &kp C_VOL_DN          &trans    &trans    &trans     &trans    &trans    &trans
-                   &trans    &mo fourth    &trans    &trans    &mo fourth    &trans
+                   &trans    &mo THIRD    &trans    &trans    &mo THIRD    &trans
 
                         >;
                 };
 
-                fourth_layer {
+                THIRD_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |

@@ -1,1 +1,1 @@
-# zmk-corne2
+# zmk-corne
